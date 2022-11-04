@@ -1,4 +1,4 @@
-import { StyleAll, EachC } from "./styleCategories"
+import { StyleAll, EachC } from "./styleCategories";
 
 export default function Categories(){
 

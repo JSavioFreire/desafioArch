@@ -13,6 +13,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
+        background-color: var(--colorLight);
     }
 `
 
@@ -21,4 +22,5 @@ export const Eighty = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 `

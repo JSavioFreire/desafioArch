@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const BanneraAll = styled.div`
     width: 100%;
     height: calc(100vh - 130px);
-    background-color: var(--colorLight);
     display: flex;
     justify-content: center;
     align-items: center;

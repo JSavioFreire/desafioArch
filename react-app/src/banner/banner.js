@@ -1,12 +1,12 @@
-import { BanneraAll,SubCarousel,Boxes,Box,Icon,P } from "./styleBanner"
-import { Eighty } from "../styleGlobal"
+import { BanneraAll,SubCarousel,Boxes,Box,Icon,P } from "./styleBanner";
+import { Eighty } from "../styleGlobal";
 
 import { BsTruck, BsCreditCard2Front } from 'react-icons/bs';
 import { MdSecurity } from 'react-icons/md';
 
 import Tilt from 'react-parallax-tilt';
 
-import Carousel from "./carousel/carousel"
+import Carousel from "./carousel/carousel";
 
 export default function Banner(){
 
