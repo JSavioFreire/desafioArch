@@ -5,7 +5,8 @@ export default createGlobalStyle`
     :root{
         --colorBack:#222222;
         --colorOrange:#D79D39;
-        --colorLight:#C3C3C3
+        --colorLight:#C3C3C3;
+        --colorShadow:#28282850;
     }
     body{
         margin: 0;

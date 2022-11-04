@@ -11,13 +11,12 @@ export const BanneraAll = styled.div`
 export const SubCarousel = styled.div`
     width: 60%;
     height: 400px;
-    box-shadow: 2px 2px 5px var(--colorBack);
+    box-shadow: 5px 5px 15px var(--colorShadow);
     cursor: grab;
 `
 export const Boxes = styled.div`
     width: 30%;
     height: 400px;
-    box-shadow: 2px 2px 5px var(--colorBack);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -27,5 +26,19 @@ export const Boxes = styled.div`
 export const Box = styled.div`
     width: 80%;
     height: 100px;
-    background-color: green;
+    background-color: white;
+    box-shadow: 5px 5px 15px var(--colorShadow);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+`
+export const Icon = styled.div`
+    font-size: 75px;
+    margin-top: 20px;
+    color: var(--colorBack);
+`
+export const P = styled.p`
+    color: var(--colorBack);
+    font-size: 17px;
+    width: 50%;
 `
