@@ -4,6 +4,8 @@ import { Eighty } from "../styleGlobal"
 import { BsTruck, BsCreditCard2Front } from 'react-icons/bs';
 import { MdSecurity } from 'react-icons/md';
 
+import Tilt from 'react-parallax-tilt';
+
 import Carousel from "./carousel/carousel"
 
 export default function Banner(){
@@ -15,24 +17,30 @@ export default function Banner(){
                     <Carousel/>
                 </SubCarousel>
                 <Boxes>
-                    <Box>
-                        <Icon>
-                            <BsTruck/>
-                        </Icon>
-                        <P>We deliver anywhere</P>
-                    </Box>
-                    <Box>
-                        <Icon>
-                            <BsCreditCard2Front/>
-                        </Icon>
-                        <P>We accept credit cards</P>
-                    </Box>
-                    <Box>
-                        <Icon>
-                            <MdSecurity/>
-                        </Icon>
-                        <P>Secure website</P>
-                    </Box>
+                    <Tilt>
+                        <Box>
+                            <Icon>
+                                <BsTruck/>
+                            </Icon>
+                            <P>We deliver anywhere</P>
+                        </Box>
+                    </Tilt>
+                    <Tilt>
+                        <Box>
+                            <Icon>
+                                <BsCreditCard2Front/>
+                            </Icon>
+                            <P>We accept credit cards</P>
+                        </Box>
+                    </Tilt>
+                    <Tilt>
+                        <Box>
+                            <Icon>
+                                <MdSecurity/>
+                            </Icon>
+                            <P>Secure website</P>
+                        </Box>
+                    </Tilt>
                 </Boxes>
             </Eighty>
         </BanneraAll>

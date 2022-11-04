@@ -24,7 +24,7 @@ export const Boxes = styled.div`
 
 `
 export const Box = styled.div`
-    width: 80%;
+    width: 250px;
     height: 100px;
     background-color: white;
     box-shadow: 5px 5px 15px var(--colorShadow);
