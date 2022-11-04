@@ -23,7 +23,7 @@ export const Flex = styled.div`
 
 export const Each = styled.div`
     width: 20%;
-    height: 350px;
+    height: 400px;
     background-color: white;
     margin: 20px 10px;
     box-shadow: 5px 5px 15px var(--colorShadow);
@@ -37,18 +37,25 @@ export const Each = styled.div`
 `
 export const ImgEach = styled.img`
     width: 80%;
-    height: 70%;
-    background-color: green;
+    height: 60%;
 `
 export const About = styled.div`
     width: 100%;
-    height: 30%;
+    height: 40%;
 `
 export const Title = styled.h2`
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     text-align: center;
     margin-top: 1px;
+    text-transform: capitalize;
+
+
+
+`
+export const Description = styled.h2`
+    font-size: 15px;
+    font-weight: 400;
     text-transform: capitalize;
 
 

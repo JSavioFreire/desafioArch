@@ -10,18 +10,17 @@ export default function Product(){
 
     const [store, setStore] = useState([]);
 
-    console.log(store);
-
     useEffect(()=>{
         fetchStore();
     },[])
 
     const fetchStore = ()=>{
-        fetch('https://api.storerestapi.com/products')
+        fetch('https://fakestoreapi.com/products')
         .then(response => response.json())
-        .then(api => setStore(api.data))
+        .then(api => setStore(api))
     }
-   
+
+   //console.log(store)
 
     return(
         <>
@@ -35,7 +34,7 @@ export default function Product(){
                         return(
                             <>
                             <Each>
-                                <EachProduct name = {values.title} price = {values.price}/>
+                                <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
                             </Each>  
                             </>
                         )

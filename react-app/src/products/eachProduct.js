@@ -1,13 +1,14 @@
-import { ImgEach,Title,About,Value } from "./styleProduct";
+import { ImgEach,Title,About,Value,Description } from "./styleProduct";
 
 export default function EachProduct(props){
 
     return(
         <>
-            <ImgEach></ImgEach>
+            <ImgEach src={props.image}/>
             <About>
                 <Title>{props.name}</Title>
-                <Value>$ {props.price},00</Value>
+                <Description>{props.description}</Description>
+                <Value>$ {props.price}</Value>
             </About>
         </>
     )
