@@ -23,7 +23,7 @@ export const Flex = styled.div`
 
 export const Each = styled.div`
     width: 20%;
-    height: 400px;
+    height: 420px;
     background-color: white;
     margin: 20px 10px;
     box-shadow: 5px 5px 15px var(--colorShadow);
@@ -37,11 +37,11 @@ export const Each = styled.div`
 `
 export const ImgEach = styled.img`
     width: 80%;
-    height: 60%;
+    height: 50%;
 `
 export const About = styled.div`
     width: 100%;
-    height: 40%;
+    height: 50%;
 `
 export const Title = styled.h2`
     font-size: 17px;
@@ -66,4 +66,19 @@ export const Value = styled.h1`
     font-weight: 400;
     text-align: center;
     margin-top: -15px;
+`
+export const Button = styled.button`
+    padding: 10px;
+    border: 3px solid var(--colorOrange);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+`
+export const Button2 = styled.button`
+    padding: 10px;
+    border: 3px solid var(--colorOrange);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
 `
