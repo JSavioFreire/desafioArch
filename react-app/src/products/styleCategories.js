@@ -19,7 +19,4 @@ export const EachC = styled.a`
     :hover{
         color: var(--colorOrange);
     }
-
-
-
 `

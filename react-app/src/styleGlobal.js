@@ -15,6 +15,9 @@ export default createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
         background-color: var(--colorLight);
     }
+    .color{
+        color: var(--colorOrange);
+    }
 `
 
 export const Eighty = styled.div`

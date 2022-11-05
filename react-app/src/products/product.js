@@ -1,5 +1,5 @@
 import React from "react";
-import { Each,Flex,H1 } from "./styleProduct";
+import { Each,Flex } from "./styleProduct";
 import { StyleAll, EachC } from "../products/styleCategories";
 import { Eighty } from "../styleGlobal";
 
@@ -14,98 +14,63 @@ export default function Product(){
     useEffect(()=>{
         fetchStore();
     },[])
-
+    
     const fetchStore = ()=>{
         fetch('https://fakestoreapi.com/products')
         .then(response => response.json())
         .then(api => setStore(api))
     }
 
-   
+   const [eachCategory, setEachCategory] = useState('all')
+
 
     return(
         <>
             <StyleAll>
-                <EachC href="#">Men's clothing</EachC>
-                <EachC href='#'>Jewelery</EachC>
-                <EachC href='#'>Electronics</EachC>
-                <EachC href='#'>Women's clothing</EachC>
+                <EachC onClick={() => setEachCategory('all')} className={eachCategory === 'all' ? 'color':''}>All Products</EachC>
+                <EachC onClick={() => setEachCategory('men')} className={eachCategory === 'men' ? 'color':''}>Men's clothing</EachC>
+                <EachC onClick={() => setEachCategory('electronics')} className={eachCategory === 'electronics' ? 'color':''}>Electronics</EachC>
+                <EachC onClick={() => setEachCategory('women')} className={eachCategory === 'women' ? 'color':''}>Women's clothing</EachC>
             </StyleAll>
-        <H1>All Products</H1>
             <Eighty>
                 <Flex>
                     {store.map((values)=>{
-
-                        return(
-                            <>
-                            <Each>
-                                <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
-                            </Each>  
-                            </>
-                        )
-                    })}
-                         
-                     
-                </Flex>
-            </Eighty>
-        <H1>Men's clothing</H1>
-                
-            <Eighty>
-                <Flex>
-                    {store.map((values)=>{
-                        console.log(values.category)
-
-                        if(values.category == "men's clothing"){
-                            return(
-                            <>
-                            <Each>
-                                <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
-                            </Each>  
-                            </>
-                        )
-                        }
+                        if(eachCategory === 'men'){
+                            if(values.category === "men's clothing"){
+                                return(                                    
+                                    <Each>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                    </Each>                                     
+                                )
+                        }}                             
+                        else if(eachCategory === 'electronics'){
+                            if(values.category === "electronics"){
+                                return(
+                                    <Each>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                    </Each>     
+                                )
+                        }}
+                        else if(eachCategory === 'women'){
+                            if(values.category === "women's clothing"){
+                                return(
+                                    <Each>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                    </Each>      
+                                )
+                        }}
                         else{
-                            return(
-                                <></>
-                            )
-                        }
-                        
-
-                    })}
-                        
+                            if(values.category === "women's clothing" || values.category === "electronics" || values.category === "men's clothing" ){
+                                return(
+                                    <Each>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                    </Each>  
+                                )
+                        }}  
+                    })}     
                 </Flex>
             </Eighty>
-
-        <H1>Men's clothing</H1>
-            <Eighty>
-                <Flex>
-                    {store.map((values)=>{
-                        console.log(values.category)
-
-                        if(values.category == "men's clothing"){
-                            return(
-                            <>
-                            <Each>
-                                <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
-                            </Each>  
-                            </>
-                        )
-                        }
-                        else{
-                            return(
-                                <></>
-                            )
-                        }
-                        
-
-                    })}
-                        
-                </Flex>
-            </Eighty>
-            
         
-
-
         </>
     )
 }
