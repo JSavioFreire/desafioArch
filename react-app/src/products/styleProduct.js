@@ -8,6 +8,7 @@ export const H1 = styled.h1`
     justify-content: center;
     align-items: center;
     color: var(--colorBack);
+    margin-top: 0;
 `
 export const Flex = styled.div`
     display: flex;
@@ -22,7 +23,7 @@ export const Flex = styled.div`
 //EachProduct
 
 export const Each = styled.div`
-    width: 20%;
+    width: 30%;
     height: 420px;
     background-color: white;
     margin: 20px 10px;
@@ -36,8 +37,8 @@ export const Each = styled.div`
 
 `
 export const ImgEach = styled.img`
-    width: 80%;
-    height: 50%;
+    width: 30%;
+    
 `
 export const About = styled.div`
     width: 100%;
@@ -57,6 +58,9 @@ export const Description = styled.h2`
     font-size: 15px;
     font-weight: 400;
     text-transform: capitalize;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 
 
@@ -65,20 +69,20 @@ export const Value = styled.h1`
     font-size: 28px;
     font-weight: 400;
     text-align: center;
+
+`
+export const FlexRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
     margin-top: -15px;
+
 `
 export const Button = styled.button`
     padding: 10px;
-    border: 3px solid var(--colorOrange);
+    background-color: var(--colorOrange);
     border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-
-`
-export const Button2 = styled.button`
-    padding: 10px;
-    border: 3px solid var(--colorOrange);
-    border-radius: 10px;
-    text-align: center;
     cursor: pointer;
 `

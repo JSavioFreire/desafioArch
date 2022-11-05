@@ -23,4 +23,5 @@ export const Eighty = styled.div`
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    flex-direction: column;
 `

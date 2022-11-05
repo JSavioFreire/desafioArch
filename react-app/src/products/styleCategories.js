@@ -14,6 +14,7 @@ export const EachC = styled.a`
     text-decoration: none;
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 
     :hover{
         color: var(--colorOrange);
