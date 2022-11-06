@@ -1,7 +1,6 @@
-import { All,Logo,Menu } from "./styleHeader";
-import { TiShoppingCart} from 'react-icons/ti';
+import { All,Logo } from "./styleHeader";
 import MenuMobile from "../menuMobile/menuMobile";
-import { Cart } from "./styleHeader";
+import Cart from "../cart/cart"
 
 import logo from '../img/logo.png';
 
@@ -11,9 +10,7 @@ export default function Header(){
         <All className='content'>
             <MenuMobile/>
             <Logo src={logo} />
-            <Cart>
-                <TiShoppingCart/>
-            </Cart>
+            <Cart/>
         </All>
     )
 }

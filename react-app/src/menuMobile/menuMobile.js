@@ -16,7 +16,7 @@ export default function MenuMobile(){
                 <Hamburger toggled={isOpen} toggle={setOpen} />
             </Menu>
 
-            <BoxMenu className={isOpen?'':'close'}>
+            <BoxMenu className={isOpen?'openMenu':''}>
             <EachCMobile onClick={() => setEachCategory('all')} className={eachCategory === 'all' ? 'color':''} >All Products</EachCMobile>
             <EachCMobile onClick={() => setEachCategory('men')} className={eachCategory === 'men' ? 'color':''}>Men's clothing</EachCMobile>
             <EachCMobile onClick={() => setEachCategory('electronics')} className={eachCategory === 'electronics' ? 'color':''}>Electronics</EachCMobile>

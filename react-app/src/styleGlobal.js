@@ -19,8 +19,11 @@ export default createGlobalStyle`
     .color{
         color: var(--colorOrange);
     }
-    .close{
-        left: -60%;
+    .openMenu{
+        left: 0;
+    }
+    .openCart{
+        right: 0;
     }
 `
 

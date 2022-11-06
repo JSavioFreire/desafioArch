@@ -15,27 +15,29 @@ export const Menu = styled.div`
 `
 
 export const BoxMenu = styled.div`
-    width: 50%;
-    left: 0;
+    width: 45%;
+    left: -60%;
     top: 0;
     height: 100vh;
-    background-color: var(--colorBack);
+    background-color: var(--colorLight);
     position: fixed;
     padding-top: 30%;
     padding-left: 10px;
     transition: 1s;
+    display: none;
+    color: black;
+
+    @media (max-width: 768px) {
+    display: block;
+  }
 `
 export const EachCMobile = styled.a`
     font-size: 20px;
     text-decoration: none;
-    color: white;
     transition: 0.3s;
     cursor: pointer;
     display: block;
     margin-bottom: 20px;
-
-    
-   
 
     :hover{
         color: var(--colorOrange);

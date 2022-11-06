@@ -12,10 +12,3 @@ export const All = styled.div`
 export const Logo = styled.img`
     width: 200px;  
 `
-export const Cart = styled.div`
-    font-size: 35px;
-    color: white;
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
-`
