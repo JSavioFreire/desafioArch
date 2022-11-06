@@ -19,6 +19,9 @@ export default createGlobalStyle`
     .color{
         color: var(--colorOrange);
     }
+    .close{
+        left: -60%;
+    }
 `
 
 export const Eighty = styled.div`

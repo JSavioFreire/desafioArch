@@ -8,6 +8,10 @@ export const Flex = styled.div`
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 
@@ -25,6 +29,10 @@ export const Each = styled.div`
     align-items: center;
     padding: 5px;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+    width: 90%;
+  }
 `
 export const ImgEach = styled.img`
     width: 30%; 
