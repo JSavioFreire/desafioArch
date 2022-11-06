@@ -14,6 +14,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
         background-color: var(--colorLight);
+        color: black;
     }
     .color{
         color: var(--colorOrange);
