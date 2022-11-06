@@ -5,7 +5,7 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import { useState } from 'react';
 
 
-export default function Cart(props){
+export default function Cart(){
 
     const [cartOpen, setOpen] = useState(false)
 
@@ -25,7 +25,7 @@ export default function Cart(props){
                     </MyCart>
                     <TextCart>
                         My Shopping Cart is <strong>Empty</strong>
-                         produto: {props.name}
+                         produto: 
                     </TextCart>
                 </Eighty>
             </CartAll>

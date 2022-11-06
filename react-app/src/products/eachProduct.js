@@ -1,13 +1,21 @@
+import { useEffect, useState, createContext } from "react";
 import { ImgEach,Title,About,Value,Description,FlexRow,Button } from "./styleProduct";
 
 export default function EachProduct(props){
-    const toCart = ()=>{
-        const title = props.name;
-        const img = props.image;
-        const value = props.price;
+    
+    const [inside, setInside] = useState(false)
 
-        console.log(title, img, value)
+    const turnToInside = ()=>{
+        setInside(true);
     }
+    useEffect(()=>{
+        if(inside == true){
+            const name = props.name;
+            const image = props.image;
+        }
+    })
+      
+
 
     return(
         <>
@@ -16,7 +24,7 @@ export default function EachProduct(props){
                 <Title>{props.name}</Title>
                 <Description>{props.description}</Description>
                 <FlexRow>
-                    <Button onClick={()=> toCart()}>Add to cart</Button>
+                    <Button onClick={turnToInside}>Add to cart</Button>
                     <Value>$ {props.price}</Value>
                 </FlexRow>
             </About>
