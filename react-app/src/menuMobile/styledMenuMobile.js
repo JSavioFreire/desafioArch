@@ -15,17 +15,17 @@ export const Menu = styled.div`
 `
 
 export const BoxMenu = styled.div`
-    width: 45%;
+    width: 30%;
     left: -60%;
     top: 0;
     height: 100vh;
-    background-color: var(--colorLight);
+    background-color: ${(props) => props.theme.color.background};
     position: fixed;
-    padding-top: 30%;
+    padding-top: 10%;
     padding-left: 10px;
     transition: 1s;
     display: none;
-    color: black;
+    color: ${(props) => props.theme.color.text};
 
     @media (max-width: 768px) {
     display: block;

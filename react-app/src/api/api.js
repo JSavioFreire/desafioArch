@@ -23,7 +23,7 @@ export function ApiContextProvider({children}){
   }
 
     return(
-        <ApiContext.Provider value={{store, setEachCategory, eachCategory,cart,setCart,names,image,value}}>
+        <ApiContext.Provider value={{store, setEachCategory, eachCategory,cart,setCart,names,image,value,dark, setDark }}>
             {children}
         </ApiContext.Provider>
 

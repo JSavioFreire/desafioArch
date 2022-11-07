@@ -11,15 +11,14 @@ export const CartAll = styled.div`
     width: 90%;
     right: -100%;
     top: 0;
-    height: 100vh;
-    position: fixed;
+    position: absolute;
     transition: 1s;
     display: block;
-    background-color: var(        --colorLight);
+    background-color: ${(props) => props.theme.color.background};
     transition: 1s;
     display: block;
-    color: var(--colorBack);
-
+    color: ${(props) => props.theme.color.text};
+    border: 4px solid black;
   
 `
 export const MyCart = styled.h1`
@@ -28,12 +27,13 @@ export const MyCart = styled.h1`
 `
 export const TextCart = styled.div`
     width: 80%;
-    height: 300px;
+    min-height: 300px;
+
     
 `
 export const Close = styled.div`
     font-size: 40px;
-    color: black;
+    color: red;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -47,6 +47,8 @@ export const EachCar = styled.div`
     justify-content: space-around;
     background-color: white;
     min-height: 0;
+    max-height: 70px;
+    color: black;
 `
 export const Img = styled.img`
     width: 10%;
@@ -66,4 +68,5 @@ export const Flex = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 `

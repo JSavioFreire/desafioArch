@@ -1,7 +1,8 @@
 import styled,{ createGlobalStyle } from "styled-components";
 
-
 export default createGlobalStyle`
+
+
     :root{
         --colorBack:#222222;
         --colorOrange:#D79D39;
@@ -13,8 +14,8 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
-        background-color: var(--colorLight);
-        color: black;
+        background-color: ${(props) => props.theme.color.background};
+        overflow-x: hidden;
     }
     .color{
         color: var(--colorOrange);

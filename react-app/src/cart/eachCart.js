@@ -1,7 +1,8 @@
 import { Img,Text,EachCar,Flex,Value } from "./styleCart"
 
 export default function EachCard(props){
-    
+
+
     return(
         
         <EachCar>
@@ -12,7 +13,7 @@ export default function EachCard(props){
                 </Text>    
                 <Value>
                     {props.value}
-                </Value>    
+                </Value>  
             </Flex>
                 
         </EachCar>
