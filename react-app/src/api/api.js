@@ -7,6 +7,7 @@ export function ApiContextProvider({children}){
     const [store, setStore] = useState([]);
     const [cart, setCart] = useState(false);
     const [eachCategory, setEachCategory] = useState('all');
+    const [dark, setDark] = useState(false)
     const names = [];
     const image = [];
     const value = [];
