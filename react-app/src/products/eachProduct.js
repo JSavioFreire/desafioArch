@@ -1,21 +1,26 @@
-import { useEffect, useState, createContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import { ImgEach,Title,About,Value,Description,FlexRow,Button } from "./styleProduct";
+import { ApiContext } from "../api/api";
 
 export default function EachProduct(props){
     
-    const [inside, setInside] = useState(false)
+    const { names, image,value} = useContext(ApiContext);
+    const [inside, setInside] = useState(false);
 
     const turnToInside = ()=>{
         setInside(true);
     }
     useEffect(()=>{
         if(inside == true){
-            const name = props.name;
-            const image = props.image;
-        }
-    })
-      
 
+            names.push(props.name)
+            image.push(props.image)
+            value.push(props.price)
+            console.log(names, image, value);
+            
+        }
+        
+    })
 
     return(
         <>

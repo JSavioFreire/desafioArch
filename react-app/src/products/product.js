@@ -9,7 +9,6 @@ import { ApiContext } from "../api/api";
 export default function Product(){
 
 const {store, eachCategory} = useContext(ApiContext);
-
     return(
         <>
             
@@ -21,7 +20,7 @@ const {store, eachCategory} = useContext(ApiContext);
                             if(values.category === "men's clothing"){
                                 return(                                    
                                     <Each>
-                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description} id={values.id}/>
                                     </Each>                                     
                                 )
                         }}                             
@@ -29,7 +28,7 @@ const {store, eachCategory} = useContext(ApiContext);
                             if(values.category === "electronics"){
                                 return(
                                     <Each>
-                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description} id={values.id}/>
                                     </Each>     
                                 )
                         }}
@@ -37,7 +36,7 @@ const {store, eachCategory} = useContext(ApiContext);
                             if(values.category === "women's clothing"){
                                 return(
                                     <Each>
-                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description} id={values.id}/>
                                     </Each>      
                                 )
                         }}
@@ -45,7 +44,7 @@ const {store, eachCategory} = useContext(ApiContext);
                             if(values.category === "women's clothing" || values.category === "electronics" || values.category === "men's clothing" ){
                                 return(
                                     <Each>
-                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description}/>
+                                        <EachProduct image = {values.image} name = {values.title} price = {values.price} description = {values.description} id={values.id}/>
                                     </Each>  
                                 )
                         }}  
