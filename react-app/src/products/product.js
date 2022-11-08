@@ -3,12 +3,14 @@ import { Each,Flex } from "./styleProduct";
 import { Eighty } from "../styleGlobal";
 
 import EachProduct from "./eachProduct";
+import AddProduct from "./addProduct";
 import { useContext } from "react";
 import { ApiContext } from "../api/api";
 
 export default function Product(){
 
 const {store, eachCategory} = useContext(ApiContext);
+
     return(
         <>
             
@@ -49,6 +51,9 @@ const {store, eachCategory} = useContext(ApiContext);
                                 )
                         }}  
                     })}     
+                    <Each>
+                        <AddProduct/>
+                    </Each>
                 </Flex>
             </Eighty>
         

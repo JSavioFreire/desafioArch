@@ -14,10 +14,6 @@ export const Flex = styled.div`
   }
 `
 
-
-
-//EachProduct
-
 export const Each = styled.div`
     width: 30%;
     height: 420px;
@@ -73,5 +69,30 @@ export const Button = styled.button`
     padding: 10px;
     background-color: var(--colorOrange);
     border-radius: 10px;
+    cursor: pointer;
+`
+export const Add = styled.div`
+    font-size: 65px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 80px;
+    height: 90px;
+    text-align: center;
+    cursor: pointer;
+`
+export const Input = styled.input`
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+    :focus{
+        outline: none;
+    }
+`
+export const InputBt = styled.input`
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
     cursor: pointer;
 `
